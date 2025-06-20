@@ -18,7 +18,7 @@ public record DTOListedBook(
 
         @Enumerated
         GenreBook genreBook) {
-        public DTOListedBook(Book remedio){
-                this(remedio.getId(), remedio.getBookName(), remedio.getAuthor(), remedio.getPrice(), remedio.getGenreBook());
+        public DTOListedBook(Book book){
+                this(book.getId(), book.getBookName(), book.getAuthor(), book.getPrice(), book.getGenreBook());
         }
 }
